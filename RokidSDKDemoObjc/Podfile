@@ -1,0 +1,24 @@
+platform :ios, '8.0'
+use_frameworks!
+inhibit_all_warnings!
+
+workspace 'RokidSDKDemo.xcworkspace'
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'RokidSDKDemoObjc' do
+    project 'RokidSDKDemoObjc/RokidSDKDemoObjc.xcodeproj'
+
+    pod 'RokidSDK', '~> 0.0.1'
+end
+
+target 'RokidSDKDemoSwift' do
+  project 'RokidSDKDemoSwift/RokidSDKDemoSwift.xcodeproj'
+
+  pod 'RokidSDK', '~> 0.0.1'
+
+  target 'RokidSDKTests' do
+    inherit! :search_paths
+  end
+
+end

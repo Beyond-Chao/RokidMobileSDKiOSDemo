@@ -8,7 +8,7 @@
 
 #import "VuiViewController.h"
 #import "UIAlertController+Rokid.h"
-@import RokidSDK;
+#import <RokidSDK/RokidSDK-Swift.h>
 
 @interface VuiViewController ()
 @property (strong, nonatomic)  RKDevice * device;

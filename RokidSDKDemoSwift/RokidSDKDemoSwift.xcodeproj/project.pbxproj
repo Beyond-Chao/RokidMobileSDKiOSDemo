@@ -7,30 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9E117C20316ECD7F48BD8C45 /* Pods_RokidSDKDemoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B82FFAE87CBA84C87BF1B33F /* Pods_RokidSDKDemoSwift.framework */; };
 		D4F951241FCE5D0B0091179D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F951231FCE5D0B0091179D /* AppDelegate.swift */; };
 		D4F951261FCE5D0B0091179D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F951251FCE5D0B0091179D /* MainViewController.swift */; };
 		D4F951291FCE5D0B0091179D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4F951271FCE5D0B0091179D /* Main.storyboard */; };
 		D4F9512B1FCE5D0B0091179D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4F9512A1FCE5D0B0091179D /* Assets.xcassets */; };
-		DD2A523F20413FCF0083CD4D /* RokidSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2A523920413F680083CD4D /* RokidSDK.framework */; };
-		DD2A524020413FCF0083CD4D /* RokidSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD2A523920413F680083CD4D /* RokidSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DD2A5244204144460083CD4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2A5246204144460083CD4D /* LaunchScreen.storyboard */; };
 		DD2A524920414A630083CD4D /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD2A524720414A620083CD4D /* config.plist */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		DD2A524120413FCF0083CD4D /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				DD2A524020413FCF0083CD4D /* RokidSDK.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A84F9EC66900EC7F7C4E3A84 /* Pods-RokidSDKDemoSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RokidSDKDemoSwift.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-RokidSDKDemoSwift/Pods-RokidSDKDemoSwift.debug.xcconfig"; sourceTree = "<group>"; };
@@ -41,7 +24,6 @@
 		D4F951281FCE5D0B0091179D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4F9512A1FCE5D0B0091179D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4F9512F1FCE5D0B0091179D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD2A523920413F680083CD4D /* RokidSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RokidSDK.framework; sourceTree = "<group>"; };
 		DD2A5245204144460083CD4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD2A524720414A620083CD4D /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
 		E795AEC787AEF517C3C02F57 /* Pods-RokidSDKDemoSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RokidSDKDemoSwift.release.xcconfig"; path = "../Pods/Target Support Files/Pods-RokidSDKDemoSwift/Pods-RokidSDKDemoSwift.release.xcconfig"; sourceTree = "<group>"; };
@@ -52,8 +34,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E117C20316ECD7F48BD8C45 /* Pods_RokidSDKDemoSwift.framework in Frameworks */,
-				DD2A523F20413FCF0083CD4D /* RokidSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +52,6 @@
 		D4F951171FCE5D0B0091179D = {
 			isa = PBXGroup;
 			children = (
-				DD2A523620413F680083CD4D /* RokidSDK */,
 				D4F951221FCE5D0B0091179D /* RokidSDKDemoSwift */,
 				D4F951211FCE5D0B0091179D /* Products */,
 				D4F9515A1FCE5DFA0091179D /* Frameworks */,
@@ -126,23 +105,6 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		DD2A523620413F680083CD4D /* RokidSDK */ = {
-			isa = PBXGroup;
-			children = (
-				DD2A523820413F680083CD4D /* Debug-Universal */,
-			);
-			name = RokidSDK;
-			path = ../RokidSDK;
-			sourceTree = "<group>";
-		};
-		DD2A523820413F680083CD4D /* Debug-Universal */ = {
-			isa = PBXGroup;
-			children = (
-				DD2A523920413F680083CD4D /* RokidSDK.framework */,
-			);
-			path = "Debug-Universal";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,7 +117,6 @@
 				D4F9511D1FCE5D0B0091179D /* Frameworks */,
 				D4F9511E1FCE5D0B0091179D /* Resources */,
 				5A815E9E7BE6D6F2C4958D88 /* [CP] Embed Pods Frameworks */,
-				DD2A524120413FCF0083CD4D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
